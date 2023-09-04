@@ -53,6 +53,7 @@
               ];
             };
           };
+
           packages.default = stdenv.mkDerivation {
             pname = "fi6s";
             version = "8d5ddba";
