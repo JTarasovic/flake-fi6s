@@ -1,6 +1,11 @@
 {
   description = "Packaging for sfan5/fi6s";
 
+  nixConfig = {
+    extra-substituters = [ "https://flake-fi6s.cachix.org" ];
+    extra-trusted-public-keys = [ "flake-fi6s.cachix.org-1:HdBpOduB+6yvnIPaXePDL1bMLKVIO9B5p5h8n78WHok=" ];
+  };
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
