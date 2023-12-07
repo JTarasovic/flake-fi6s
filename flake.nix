@@ -19,13 +19,6 @@
       url = "github:numtide/treefmt-nix";
       inputs = { nixpkgs.follows = "nixpkgs"; };
     };
-    flake-checker = {
-      url = "github:DeterminateSystems/flake-checker";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-      };
-    };
-
   };
 
   outputs = inputs@{ flake-parts, flake-utils, flake-root, treefmt-nix, nixpkgs, systems, ... }:
