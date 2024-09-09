@@ -25,7 +25,7 @@ jobs:
             ${{ !(github.ref == 'refs/heads/main') }}
 
       - name: Run the Magic Nix Cache
-        uses: DeterminateSystems/magic-nix-cache-action@v7
+        uses: DeterminateSystems/magic-nix-cache-action@v8
 
       - run: nix flake check -L
 
@@ -53,6 +53,6 @@ jobs:
             ${{ !(github.ref == 'refs/heads/main') }}
 
       - name: Run the Magic Nix Cache
-        uses: DeterminateSystems/magic-nix-cache-action@v7
+        uses: DeterminateSystems/magic-nix-cache-action@v8
 
       - run: nix build .
